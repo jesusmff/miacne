@@ -48,13 +48,13 @@ El plan se adapta a las respuestas del usuario y estima un horizonte de 8 a 16 s
 
 El panel diario muestra saludo, fecha, prioridad del día, tareas, rutina de cuidado, lección diaria, hábitos, reflexión, registro de progreso y mensajes de consistencia basados en actividad real. La racha diaria se calcula al completar las tareas requeridas del día.
 
-### Microlecciones diarias
+### Lecciones interactivas
 
-Las microlecciones presentan contenido breve y rotativo sobre cuidado de la piel, hábitos y toma de decisiones informadas. Cada lección incluye cinco preguntas, explicaciones y seguimiento de progreso educativo.
+Las lecciones interactivas presentan contenido breve y rotativo sobre cuidado de la piel, hábitos y toma de decisiones informadas. Cada lección incluye cinco preguntas, explicaciones y seguimiento de progreso educativo.
 
 ### Rutina de cuidado de la piel
 
-La app organiza una rutina diaria con pasos básicos como limpieza, hidratación y protección solar, con preguntas de completado para registrar constancia. La guía se mantiene educativa y no reemplaza indicaciones profesionales.
+La plataforma organiza una rutina diaria con pasos básicos como limpieza, hidratación y protección solar, con preguntas de completado para registrar constancia. La guía se mantiene educativa y no reemplaza indicaciones profesionales.
 
 ### Registro de hábitos
 
@@ -64,9 +64,9 @@ MiAcné muestra hábitos personalizados, permite agregar hábitos propios y regi
 
 Los recordatorios se configuran por hábito, hora y frecuencia. En builds nativos usan notificaciones locales mediante Expo; en web dependen de las capacidades del navegador, permisos del usuario, service worker y Web Push cuando está disponible.
 
-### Reflexión e insights
+### Reflexión y observaciones
 
-La reflexión guiada invita al usuario a escribir sobre su día, identificar aprendizajes y planear pequeños ajustes para mañana. Los insights se generan localmente a partir de las respuestas del usuario y no representan terapia, evaluación médica ni atención profesional.
+La reflexión guiada invita al usuario a escribir sobre su día, identificar aprendizajes y planear pequeños ajustes para mañana. Las observaciones se generan localmente a partir de las respuestas del usuario y no representan terapia, evaluación médica ni atención profesional.
 
 ### Registro de progreso
 
@@ -83,10 +83,6 @@ La biblioteca contiene lecciones educativas con artículos breves, quizzes, refe
 ### Educación nutricional
 
 La sección de nutrición presenta alimentos y componentes nutricionales como contenido educativo. No prescribe dietas, no promete resultados médicos y no reemplaza orientación profesional.
-
-### Clima y calidad del aire
-
-MiAcné puede consultar información ambiental mediante Open-Meteo, incluyendo temperatura, humedad, índice UV, AQI, PM2.5 y PM10, para aportar contexto práctico a la experiencia del usuario.
 
 ### Cuenta y sincronización
 
@@ -127,7 +123,7 @@ El contenido promueve decisiones prudentes, expectativas realistas y consulta co
 
 ## Seguimiento de hábitos y progreso
 
-El seguimiento se apoya en registros diarios simples: hábitos completados, rutina de cuidado, reflexión, notas, fotografías opcionales y tareas requeridas del día. La app convierte esos registros en métricas visuales para que el usuario observe continuidad, adherencia y evolución sin depender de promesas de resultados.
+El seguimiento se apoya en registros diarios simples: hábitos completados, rutina de cuidado, reflexión, notas, fotografías opcionales y actividades requeridas del día. La plataforma convierte esos registros en métricas visuales para que el usuario observe continuidad, adherencia y evolución sin depender de promesas de resultados.
 
 ## Sincronización y continuidad de cuenta
 

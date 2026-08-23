@@ -214,7 +214,7 @@ Jesús Sebastian Muñoz Figueroa
 Unidad Educativa Academia Naval Cap. Leonardo Abad A.
 
 <p align="center">
-  <img src="assets/acnecoach/ancla.png" alt="Ancla institucional de la Unidad Educativa Academia Naval Cap. Leonardo Abad A." width="96" />
+  <img src="assets/acnecoach/gitancla.png" alt="Ancla institucional de la Unidad Educativa Academia Naval Cap. Leonardo Abad A." width="96" />
 </p>
 
 **Contacto**

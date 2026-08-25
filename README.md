@@ -163,7 +163,7 @@ La versión web está desplegada en Cloudflare Pages y accesible desde [miacne.p
 MiAcné está disponible en iPhone mediante su versión web instalable desde Safari u otro navegador compatible. Funciones como los recordatorios dependen del navegador y de los permisos del dispositivo.
 
 <p align="center">
-  <img src="assets/acnecoach/git2.png" alt="Funciones educativas, hábitos y progreso de MiAcné" width="100%" />
+  <img src="assets/acnecoach/realgit2.png" alt="Funciones educativas, hábitos y progreso de MiAcné" width="100%" />
 </p>
 
 ---

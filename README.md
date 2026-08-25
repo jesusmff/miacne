@@ -38,7 +38,7 @@ MiAcné reúne esos elementos en una sola plataforma: guía inicial, plan person
 
 ### Cuestionario inicial guiado
 
-La configuración inicial recopila información contextual sobre piel, características relacionadas con el acné, rutina, productos, hábitos, sueño, estrés, alimentación, objetivos, compromiso y contexto ambiental. Este cuestionario orienta la experiencia personalizada dentro de la plataforma.
+El cuestionario inicial recopila información contextual sobre piel, características relacionadas con el acné, rutina, productos, hábitos, sueño, estrés, alimentación, objetivos, compromiso y contexto ambiental. Este cuestionario orienta la experiencia personalizada dentro de la plataforma.
 
 ### Perfil personalizado y recomendaciones
 
@@ -68,9 +68,9 @@ MiAcné muestra hábitos personalizados, permite agregar hábitos propios y regi
 
 Los recordatorios se configuran por hábito, hora y frecuencia. En la versión móvil utilizan notificaciones locales mediante Expo. En la versión web dependen de las capacidades del navegador y de los permisos del dispositivo, con apoyo de las notificaciones mediante Web Push cuando están disponibles.
 
-### Reflexión e insights
+### Reflexión y Observaciones
 
-La reflexión guiada invita al usuario a escribir sobre su día, identificar aprendizajes y planear pequeños ajustes para mañana. Los insights se generan localmente a partir de las respuestas del usuario.
+La reflexión guiada invita al usuario a escribir sobre su día, identificar aprendizajes y planear pequeños ajustes para mañana. Las Observaciones se generan localmente a partir de las respuestas del usuario.
 
 ### Registro de progreso
 
@@ -90,11 +90,11 @@ La sección de nutrición presenta alimentos y componentes nutricionales como co
 
 ### Información ambiental
 
-MiAcné utiliza Open-Meteo para obtener información ambiental basada en la ubicación que el usuario comparte durante la configuración inicial, como las características de humedad del entorno. Con este contexto, la plataforma adapta recomendaciones prácticas al clima del lugar donde vive el usuario.
+MiAcné utiliza Open-Meteo para obtener información ambiental basada en la ubicación que el usuario comparte durante el cuestionario inicial, como las características de humedad del entorno. Con este contexto, la plataforma adapta recomendaciones prácticas al clima del lugar donde vive el usuario.
 
 ### Cuenta y sincronización
 
-El proyecto incluye autenticación con Clerk, registro e inicio de sesión con correo y contraseña, y acceso con Google cuando la configuración está disponible. Los usuarios autenticados pueden conservar perfil, estado de la configuración inicial, plan, hábitos, progreso, recordatorios y contenido educativo asignado entre sesiones y dispositivos.
+El proyecto incluye autenticación con Clerk, registro e inicio de sesión con correo y contraseña, y acceso con Google cuando la configuración está disponible. Los usuarios autenticados pueden conservar perfil, estado del cuestionario inicial, plan, hábitos, progreso, recordatorios y contenido educativo asignado entre sesiones y dispositivos.
 
 ### Modo invitado
 
@@ -107,7 +107,7 @@ Para usuarios autenticados, la arquitectura separa los datos estructurados de la
 ## Cómo funciona MiAcné
 
 1. Conoce MiAcné.
-2. Completa la configuración inicial.
+2. Completa el cuestionario inicial.
 3. Construye tu perfil.
 4. Recibe un plan personalizado.
 5. Aprende con lecciones interactivas.
@@ -119,9 +119,9 @@ Para usuarios autenticados, la arquitectura separa los datos estructurados de la
 
 ## Personalización
 
-La personalización se genera a partir de la información que el usuario comparte y de su comportamiento dentro de la plataforma. MiAcné puede adaptar áreas de enfoque, hábitos, contenido educativo, duración del plan, prioridades diarias e insights de reflexión.
+La personalización se genera a partir de la información que el usuario comparte y de su comportamiento dentro de la plataforma. MiAcné puede adaptar áreas de enfoque, hábitos, contenido educativo, duración del plan, prioridades diarias y Observaciones de reflexión.
 
-El sistema actual es local y determinístico: trabaja con reglas, plantillas y contenido dentro del propio proyecto, sin enviar las respuestas del cuestionario a servicios externos de personalización.
+El sistema actual es local y determinístico: trabaja con reglas, plantillas y contenido dentro del propio proyecto.
 
 ## Enfoque educativo
 
@@ -152,7 +152,7 @@ En la versión web, los recordatorios pueden utilizar notificaciones web y un pr
 
 ### Android
 
-La versión móvil para Android está implementada en el proyecto mediante Expo y React Native. La guía de instalación para usuarios finales se publicará próximamente.
+La versión móvil para Android está implementada en el proyecto mediante Expo y React Native. El archivo APK y la guía de instalación para usuarios finales están disponibles en [GitHub Releases](https://github.com/jesusmff/miacne/releases).
 
 ### Navegador web y computadora
 
@@ -218,7 +218,11 @@ El ícono de MiAcné aparecerá en la pantalla de inicio de tu dispositivo. Este
 
 ## MiAcné para Android
 
-> **Guía de instalación en preparación.**
+MiAcné está disponible como aplicación Android mediante el archivo APK publicado en GitHub Releases. En la página de lanzamientos encontrarás el archivo de instalación junto con la guía completa paso a paso.
+
+<p align="center">
+  <a href="https://github.com/jesusmff/miacne/releases"><strong>→ Descargar MiAcné para Android</strong></a>
+</p>
 
 ## MiAcné para computadora
 

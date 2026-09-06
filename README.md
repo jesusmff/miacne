@@ -129,9 +129,9 @@ Para usuarios autenticados, la arquitectura separa los datos estructurados de la
 
 ## Personalización
 
-La personalización se genera a partir de la información que el usuario comparte y de su comportamiento dentro de la plataforma. MiAcné puede adaptar áreas de enfoque, hábitos, contenido educativo, duración del plan, prioridades diarias y Observaciones de reflexión.
+La personalización se construye a partir de la información que el usuario comparte y de sus hábitos dentro de la plataforma. MiAcné adapta áreas de enfoque, rutinas, contenido educativo, duración del plan, prioridades diarias y espacios de reflexión.
 
-Desde el punto de vista técnico, el sistema de personalización funciona mediante reglas y contenido integrados en el proyecto, sin depender de una IA externa.
+El sistema organiza estas experiencias mediante reglas y contenidos propios del proyecto, lo que permite ofrecer un acompañamiento progresivo y coherente con las necesidades de cada persona.
 
 ## Enfoque educativo
 

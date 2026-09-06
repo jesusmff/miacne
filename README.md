@@ -7,7 +7,7 @@
 > Plataforma digital multiplataforma de acompañamiento y educación para el cuidado de la piel y la formación de hábitos relacionados con el bienestar.
 
 <p align="center">
-  <strong>Educación</strong> · <strong>Hábitos</strong> · <strong>Seguimiento</strong> · <strong>Personalización local</strong>
+  <strong>Educación</strong> · <strong>Hábitos</strong> · <strong>Seguimiento</strong> · <strong>Personalización basada en el perfil</strong>
 </p>
 
 <p align="center">
@@ -40,9 +40,9 @@ MiAcné reúne esos elementos en una sola plataforma: guía inicial, plan person
 
 El cuestionario inicial recopila información contextual sobre piel, características relacionadas con el acné, rutina, productos, hábitos, sueño, estrés, alimentación, objetivos, compromiso y contexto ambiental. Este cuestionario orienta la experiencia personalizada dentro de la plataforma.
 
-### Perfil personalizado y recomendaciones
+### Personalización basada en el perfil
 
-MiAcné utiliza un sistema local y determinístico de personalización para construir un perfil educativo, prioridades, áreas de enfoque, recomendaciones relacionadas con hábitos y orientación básica de cuidado de la piel. La personalización se genera dentro del proyecto a partir de reglas y contenido local.
+MiAcné adapta la experiencia usando la información que el usuario comparte sobre su piel, sus hábitos, su contexto y sus objetivos. A partir del perfil se ajustan las prioridades, las áreas de enfoque, los hábitos, el plan, el contenido educativo, las reflexiones y las recomendaciones de productos, en lugar de ofrecer una experiencia genérica. La personalización se genera dentro del proyecto mediante reglas y contenido integrado.
 
 ### Plan semanal personalizado
 
@@ -78,7 +78,7 @@ El flujo de progreso permite guardar notas diarias, fotografías opcionales, obs
 
 ### Visualización de progreso
 
-La pantalla de progreso muestra calendario, registros fotográficos, racha semanal, hábitos completados, reflexiones registradas y adherencia. Las métricas se calculan desde datos persistidos del usuario.
+La pantalla de progreso muestra calendario de fotos, registros fotográficos, racha semanal, hábitos completados y reflexiones registradas. Las métricas se calculan desde los datos persistidos del usuario.
 
 ### Recursos científicos
 
@@ -86,11 +86,21 @@ Los recursos científicos reúnen lecciones educativas con artículos breves, cu
 
 ### Educación nutricional
 
-La sección de nutrición presenta alimentos y componentes nutricionales como contenido educativo para apoyar decisiones informadas sobre la alimentación.
+La sección de nutrición presenta alimentos y componentes nutricionales como contenido educativo para apoyar decisiones informadas sobre la alimentación. No prescribe dietas ni promete resultados.
+
+### Productos recomendados
+
+A partir del perfil del usuario, MiAcné recomienda productos de un catálogo seleccionado, orientado por ingredientes y evidencia. Para cada producto la app explica por qué es recomendado según las características de la piel y su sensibilidad, los ingredientes clave, qué considerar y cuándo podría no ser adecuado, e incluye referencias y alternativas accesibles cuando existen. Los precios se muestran únicamente como rangos de referencia (`$`, `$$`, `$$$`). La sección es educativa: no realiza compras ni usa publicidad de afiliados.
+
+### MiAcné Plus
+
+MiAcné Plus es la sección premium de la plataforma y amplía el cuidado con tres herramientas: Productos recomendados, Recursos científicos (Biblioteca) y Nutrición.
+
+Actualmente, MiAcné Plus utiliza una suscripción de prueba simulada para demostrar el flujo de activación y acceso a las funciones premium. No se realiza ningún cobro real.
 
 ### Información ambiental
 
-MiAcné utiliza Open-Meteo para obtener información ambiental basada en la ubicación que el usuario comparte durante el cuestionario inicial, como las características de humedad del entorno. Con este contexto, la plataforma adapta recomendaciones prácticas al clima del lugar donde vive el usuario.
+MiAcné obtiene información ambiental mediante Open-Meteo a partir de la ubicación que el usuario comparte durante el cuestionario inicial (temperatura, humedad, índice UV y calidad del aire). Esta información queda como contexto del perfil y puede informar futuras recomendaciones.
 
 ### Cuenta y sincronización
 
@@ -109,11 +119,11 @@ Para usuarios autenticados, la arquitectura separa los datos estructurados de la
 1. Conoce MiAcné.
 2. Completa el cuestionario inicial.
 3. Construye tu perfil.
-4. Recibe un plan personalizado.
-5. Aprende con lecciones interactivas.
-6. Completa hábitos y rutinas.
-7. Registra tu progreso.
-8. Reflexiona sobre tu experiencia.
+4. Recibe una experiencia personalizada.
+5. Consulta tu plan.
+6. Aprende con contenido diario.
+7. Registra hábitos y rutinas.
+8. Reflexiona y registra tu progreso.
 9. Revisa tu evolución.
 10. Continúa construyendo hábitos.
 
@@ -121,7 +131,7 @@ Para usuarios autenticados, la arquitectura separa los datos estructurados de la
 
 La personalización se genera a partir de la información que el usuario comparte y de su comportamiento dentro de la plataforma. MiAcné puede adaptar áreas de enfoque, hábitos, contenido educativo, duración del plan, prioridades diarias y Observaciones de reflexión.
 
-El sistema actual es local y determinístico: trabaja con reglas, plantillas y contenido dentro del propio proyecto.
+Desde el punto de vista técnico, el sistema de personalización funciona mediante reglas y contenido integrados en el proyecto, sin depender de una IA externa.
 
 ## Enfoque educativo
 
@@ -131,7 +141,7 @@ El contenido promueve decisiones prudentes, expectativas realistas y consulta co
 
 ## Seguimiento de hábitos y progreso
 
-El seguimiento se apoya en registros diarios simples: hábitos completados, rutina de cuidado, reflexión, notas, fotografías opcionales y tareas requeridas del día. MiAcné convierte esos registros en métricas visuales para que el usuario observe continuidad, adherencia y evolución sin depender de promesas de resultados.
+El seguimiento se apoya en registros diarios simples: hábitos completados, rutina de cuidado, reflexión, notas, fotografías opcionales y tareas requeridas del día. MiAcné convierte esos registros en métricas visuales para que el usuario observe continuidad y evolución en el tiempo, sin depender de promesas de resultados.
 
 ## Sincronización y continuidad de cuenta
 
@@ -139,7 +149,7 @@ Cuando el usuario inicia sesión, MiAcné puede mantener la continuidad de su in
 
 El proyecto utiliza Cloudflare KV para almacenar datos estructurados, Cloudflare R2 para las fotografías privadas de progreso y Cloudflare Pages Functions para gestionar las rutas de sincronización.
 
-En la versión web, los recordatorios pueden utilizar notificaciones web y un proceso programado cuando el navegador y los permisos del dispositivo lo permiten. En modo invitado, la información no se sincroniza.
+En la versión web, los recordatorios utilizan notificaciones web cuando el navegador y los permisos del dispositivo lo permiten. En modo invitado, la información no se sincroniza.
 
 ## Disponibilidad por plataforma
 
@@ -243,9 +253,9 @@ Tecnologías y servicios presentes en el proyecto:
 | Sincronización | Cloudflare Pages Functions, Cloudflare KV |
 | Fotografías privadas | Cloudflare R2, rutas autenticadas |
 | Registro fotográfico | expo-camera |
-| Recordatorios | expo-notifications, Web Push, proceso programado |
+| Recordatorios | expo-notifications, Web Push |
 | Información ambiental | Open-Meteo |
-| Interfaz | Expo Linear Gradient, NativeWind/Tailwind CSS, react-native-css |
+| Interfaz | NativeWind/Tailwind CSS, Expo Linear Gradient |
 
 # Créditos
 

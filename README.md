@@ -248,7 +248,7 @@ Tecnologías y servicios presentes en el proyecto:
 |---|---|
 | Plataforma móvil | React Native, Expo, JavaScript |
 | Web | React Native Web, manifiesto web/PWA, trabajador de servicio |
-| Persistencia local | AsyncStorage |
+| Almacenamiento en el dispositivo | AsyncStorage |
 | Autenticación | Clerk, correo y contraseña, Google cuando está configurado |
 | Sincronización | Cloudflare Pages Functions, Cloudflare KV |
 | Fotografías privadas | Cloudflare R2, rutas autenticadas |

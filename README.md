@@ -66,11 +66,11 @@ MiAcné muestra hábitos personalizados, permite agregar hábitos propios y regi
 
 ### Recordatorios de hábitos
 
-Los recordatorios se configuran por hábito, hora y frecuencia. En la versión móvil utilizan notificaciones locales mediante Expo. En la versión web dependen de las capacidades del navegador y de los permisos del dispositivo, con apoyo de las notificaciones mediante Web Push cuando están disponibles.
+Los recordatorios se configuran según el hábito, la hora y la frecuencia. En la versión móvil se envían mediante notificaciones de la aplicación. En la versión web dependen de las funciones del navegador y de los permisos del dispositivo, con apoyo de notificaciones del navegador cuando están disponibles.
 
 ### Reflexión y Observaciones
 
-La reflexión guiada invita al usuario a escribir sobre su día, identificar aprendizajes y planear pequeños ajustes para mañana. Las Observaciones se generan localmente a partir de las respuestas del usuario.
+La reflexión guiada invita al usuario a escribir sobre su día, identificar aprendizajes y planear pequeños ajustes para mañana. Las Observaciones se generan directamente a partir de las respuestas del usuario, ofreciendo un espacio de seguimiento personal.
 
 ### Registro de progreso
 
